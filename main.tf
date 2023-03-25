@@ -8,6 +8,6 @@ resource "aws_vpc" "actions" {
     tags = {
 
       name = "Class30"
-    }
+ }
 }
 
