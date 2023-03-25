@@ -3,8 +3,8 @@ on:
  - push
 
 env:
-   AWS_ACCESS_KEY: ${{secret.AWS_Access_key}}
-   AWS_SECRET_ACCESS_KEY: ${{secret.AWS_ACCESS_KEY}}
+   AWS_ACCESS_KEY: ${{ secrets.AWS_Access_key }}
+   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
