@@ -7,23 +7,15 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: echo string
-        run:  echo "Holle"
+      - name: Checkout
+        uses:  actions/checkout@v1
+       -name: set Terraform
+        uses: hashicorp/setup-terraform@v2
+        with: 
+          terrafor
       - name: multi line string
         run: |
           pwd
           node -v
           ls -a
-      - name: python command
-        run: |
-           import platform
-           print(platform.processor())
-        shell: python 
-
-  run-windows-commands:
-    runs-on: windows-latest
-    needs: ["run-shell-command"]
-    steps:
-      - name: Directoy
-        run: pwd
-        shell: bash     
+  
