@@ -2,7 +2,9 @@ name: shell commands
 on:
  - push
 
-
+env:
+   AWS_ACCESS_KEY: ${{secret.AWS_Access_key}}
+   AWS_SECRET_ACCESS_KEY: ${{secret.AWS_ACCESS_KEY}}
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
