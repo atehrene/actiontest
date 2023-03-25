@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses:  actions/checkout@v1
-       -name: set Terraform
-        uses: hashicorp/setup-terraform@v2
-        with: 
-          terrafor
+        uses: actions/checkout@v1
+      # -name: set Terraform
+       # uses: hashicorp/setup-terraform@v2
+        #with: 
+         # terrafor
       - name: multi line string
         run: |
           pwd
