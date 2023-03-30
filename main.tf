@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-west-1"
 }
 
-resource "aws_vpc" "actions" {
+resource "aws_vpc" "actions2" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
